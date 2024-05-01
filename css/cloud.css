@@ -1,0 +1,27 @@
+body {
+  background: #99baff;
+  width: 100%;
+  overflow: hidden;
+}
+body .cloudImg {
+  animation-name: cloudany;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+body .cloudImg.cloudImg1 {
+  width: 30rem;
+  animation-duration: 10s;
+}
+body .cloudImg.cloudImg2 {
+  width: 20rem;
+  animation-duration: 15s;
+}
+
+@keyframes cloudany {
+  0% {
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
